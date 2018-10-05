@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer: cache addToCache function when a cache entry does exist should just return the state 1`] = `
+Object {
+  "foo": Object {
+    "exists": "hi",
+  },
+}
+`;
+
+exports[`Reducer: cache addToCache function when a cache entry does not exist should add an entry to the cache 1`] = `
+Object {
+  "foo": Object {
+    "thing": Object {
+      "bar": "baz",
+    },
+  },
+}
+`;
+
+exports[`Reducer: cache addToCache function when the cacheKey is undefined should just return the state 1`] = `
+Object {
+  "foo": Object {
+    "exists": "hi",
+  },
+}
+`;
+
+exports[`Reducer: cache followers cache should add an entry to the cache 1`] = `
+Object {
+  "followers": Object {
+    "followers.net": Object {
+      "result": Array [
+        1,
+        2,
+      ],
+    },
+  },
+}
+`;
+
+exports[`Reducer: cache profile cache should add an entry to the cache 1`] = `
+Object {
+  "profile": Object {
+    "simonsmith": Object {
+      "login": "simonsmith",
+      "name": "Simon Smith",
+    },
+  },
+}
+`;
+
+exports[`Reducer: cache repos cache should add an entry to the cache 1`] = `
+Object {
+  "repos": Object {
+    "repos.net": Object {
+      "result": Array [
+        1,
+        2,
+      ],
+    },
+  },
+}
+`;
+
+exports[`Reducer: cache search cache should add an entry to the cache 1`] = `
+Object {
+  "search": Object {
+    "page=2": Object {
+      "result": Array [
+        1,
+        2,
+      ],
+      "search": "page=2",
+      "totalResults": 2,
+    },
+  },
+}
+`;
+
+exports[`Reducer: cache when passed no state should return the initial state 1`] = `
+Object {
+  "followers": Object {},
+  "profile": Object {},
+  "rateLimit": Object {},
+  "repos": Object {},
+  "search": Object {},
+}
+`;

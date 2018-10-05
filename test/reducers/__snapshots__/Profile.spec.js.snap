@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer: profile when a profile request is pending should set isPending to true 1`] = `
+Object {
+  "isPending": true,
+}
+`;
+
+exports[`Reducer: profile when a profile request is successful should update the state with the userProfile 1`] = `
+Object {
+  "isPending": false,
+  "userProfile": Object {
+    "login": "simonsmith",
+    "name": "Simon Smith",
+  },
+}
+`;
+
+exports[`Reducer: profile when a search request fails should update the state with the error message 1`] = `
+Object {
+  "error": [Error: the server died],
+  "isPending": false,
+}
+`;
+
+exports[`Reducer: profile when passed no state should return the initial state 1`] = `
+Object {
+  "error": null,
+  "isPending": true,
+  "userProfile": Object {},
+}
+`;

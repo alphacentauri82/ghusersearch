@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Saga: getProfile when no cached data exists should call the API and put a success action with the payload 1`] = `
+Object {
+  "meta": Object {
+    "fromCache": false,
+  },
+  "payload": Object {
+    "login": "simonsmith",
+  },
+  "type": "PROFILE_SUCCESS",
+}
+`;
+
+exports[`Saga: getProfile when there is an error from the request it should put an error action 1`] = `
+Object {
+  "error": true,
+  "payload": [Error: it went wrong],
+  "type": "PROFILE_FAILURE",
+}
+`;

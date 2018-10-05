@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileConnect: mapStateToProps when given the state should return relevant properties 1`] = `
+Object {
+  "followerIds": Array [
+    4,
+    5,
+    6,
+  ],
+  "followerIsPending": false,
+  "repoEntities": Object {
+    "1": Object {
+      "id": 1,
+    },
+    "2": Object {
+      "id": 2,
+    },
+  },
+  "repoIds": Array [
+    1,
+    2,
+    3,
+  ],
+  "repoIsPending": false,
+  "userEntities": Object {
+    "4": Object {
+      "id": 4,
+    },
+    "5": Object {
+      "id": 5,
+    },
+  },
+  "userIsPending": false,
+  "userProfile": Object {},
+}
+`;

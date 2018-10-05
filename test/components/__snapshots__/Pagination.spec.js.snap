@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Pagination when passed a next prop should render a next link 1`] = `
+<div
+  className="u-flex u-flexJustifyCenter"
+>
+  <a
+    className="Pagination_link_18deiwy u-flex u-flexAlignItemsCenter u-flexExpandLeft"
+    href="/?q=simon&page=2"
+    onClick={[Function]}
+    rel="next"
+  >
+    <span>
+      Next
+    </span>
+    <svg />
+  </a>
+</div>
+`;
+
+exports[`Component: Pagination when passed a prev and next prop should render a previous and next link 1`] = `
+<div
+  className="u-flex u-flexJustifyCenter"
+>
+  <a
+    className="Pagination_link_18deiwy u-flex u-flexAlignItemsCenter u-flexRowReverse u-flexExpandRight"
+    href="/?q=simon&page=1"
+    onClick={[Function]}
+    rel="prev"
+  >
+    <span>
+      Previous
+    </span>
+    <svg />
+  </a>
+  <a
+    className="Pagination_link_18deiwy u-flex u-flexAlignItemsCenter u-flexExpandLeft"
+    href="/?q=simon&page=2"
+    onClick={[Function]}
+    rel="next"
+  >
+    <span>
+      Next
+    </span>
+    <svg />
+  </a>
+</div>
+`;
+
+exports[`Component: Pagination when passed a prev prop should render a previous link 1`] = `
+<div
+  className="u-flex u-flexJustifyCenter"
+>
+  <a
+    className="Pagination_link_18deiwy u-flex u-flexAlignItemsCenter u-flexRowReverse u-flexExpandRight"
+    href="/?q=simon&page=1"
+    onClick={[Function]}
+    rel="prev"
+  >
+    <span>
+      Previous
+    </span>
+    <svg />
+  </a>
+</div>
+`;

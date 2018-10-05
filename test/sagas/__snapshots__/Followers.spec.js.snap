@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Saga: getFollowers when a request to the API fails should call a failure action 1`] = `
+Object {
+  "action": Object {
+    "error": true,
+    "payload": [Error: it went wrong],
+    "type": "FOLLOWERS_FAILURE",
+  },
+  "channel": null,
+}
+`;
+
+exports[`Saga: getFollowers when no cached data exists should call the API with the url and parameters 1`] = `
+Object {
+  "args": Array [
+    "followers.net",
+    Object {
+      "params": Object {
+        "per_page": 8,
+      },
+    },
+  ],
+  "context": null,
+  "fn": [Function],
+}
+`;
+
+exports[`Saga: getFollowers when no cached data exists should put a success action with the normalized data 1`] = `
+Object {
+  "meta": Object {
+    "fromCache": false,
+  },
+  "payload": Object {
+    "entities": Object {
+      "users": Object {
+        "1": Object {
+          "id": 1,
+          "login": "test",
+        },
+        "2": Object {
+          "id": 2,
+          "login": "hello",
+        },
+      },
+    },
+    "result": Array [
+      1,
+      2,
+    ],
+    "url": "followers.net",
+  },
+  "type": "FOLLOWERS_SUCCESS",
+}
+`;

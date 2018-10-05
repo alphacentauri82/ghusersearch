@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Saga: getRepos when a request to the API fails should call a failure action 1`] = `
+Object {
+  "error": true,
+  "payload": [Error: it went wrong],
+  "type": "REPOS_FAILURE",
+}
+`;
+
+exports[`Saga: getRepos when no cached data exists should call the API with the url and parameters 1`] = `
+Object {
+  "args": Array [
+    "repos.net",
+    Object {
+      "params": Object {
+        "per_page": 8,
+        "sort": "pushed",
+      },
+    },
+  ],
+  "context": null,
+  "fn": [Function],
+}
+`;
+
+exports[`Saga: getRepos when no cached data exists should put a success action with the normalized data 1`] = `
+Object {
+  "meta": Object {
+    "fromCache": false,
+  },
+  "payload": Object {
+    "entities": Object {
+      "repos": Object {
+        "1": Object {
+          "name": "test",
+        },
+        "2": Object {
+          "name": "hello",
+        },
+      },
+    },
+    "result": Array [
+      1,
+      2,
+    ],
+    "url": "repos.net",
+  },
+  "type": "REPOS_SUCCESS",
+}
+`;

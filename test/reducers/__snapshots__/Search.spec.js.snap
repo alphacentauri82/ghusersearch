@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer: search when a search request fails should update the state with the error message 1`] = `
+Object {
+  "error": [Error: the server died],
+  "isPending": false,
+}
+`;
+
+exports[`Reducer: search when a search request is pending should set isPending to true 1`] = `
+Object {
+  "isPending": true,
+}
+`;
+
+exports[`Reducer: search when a search request is successful should update the state with the userIds 1`] = `
+Object {
+  "error": null,
+  "isPending": false,
+  "result": Array [
+    1,
+    2,
+  ],
+  "search": "?q=alecrust",
+}
+`;
+
+exports[`Reducer: search when passed no state should return the initial state 1`] = `
+Object {
+  "error": null,
+  "isPending": true,
+  "pagination": null,
+  "result": Array [],
+  "totalResults": 0,
+}
+`;
